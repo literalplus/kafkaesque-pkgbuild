@@ -6,9 +6,12 @@ No warranty whatsoever, but I use it myself so it will most likely be fine. This
 
 I'm loosely planning to maybe upload this to the AUR or upstream, but it would be my first package & I haven't familiarised myself with the detailed guidelines and workflow yet. If there is demand, let me know.
 
+Please note that as per upstream, this installs a JRE in `/opt/kafkaesque`, which is not necessarily space-efficient (145M at the time of writing), but obviously more robust, so this implementation decision is kept.
+
 Questions/suggestions welcome, just open an issue on GitHub or contact me using the channels shown on my website.
 
 # License
 The PKGBUILD itself isn't all that complicated & licensed under MIT, which should be sufficiently permissive.
 
 Please note that upstream is licensed as GPL v3 at the time of writing, i.e. a different license. This information may change, please check upstream for authoritative information.
+
