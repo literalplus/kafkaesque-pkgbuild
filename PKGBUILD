@@ -1,4 +1,4 @@
-# Maintainer: Philipp Nowak <philipp.nowak@cloudflight.io>
+# Maintainer: Philipp Nowak <packages@lit.plus>
 pkgname=kafkaesque-bin
 pkgver=2.4.0
 pkgrel=1
