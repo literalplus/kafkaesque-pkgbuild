@@ -10,6 +10,16 @@ Please note that as per upstream, this installs a JRE in `/opt/kafkaesque`, whic
 
 Questions/suggestions welcome, just open an issue on GitHub or contact me using the channels shown on my website.
 
+# How to install
+
+See: https://wiki.archlinux.org/title/Creating_packages
+
+```bash
+makepkg --install
+```
+
+It is possible to sanity-check the PKGBUILD using `namcap`.
+
 # License
 The PKGBUILD itself isn't all that complicated & licensed under MIT, which should be sufficiently permissive.
 
