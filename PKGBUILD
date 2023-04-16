@@ -1,6 +1,6 @@
 # Maintainer: Philipp Nowak <packages@lit.plus>
 pkgname=kafkaesque-bin
-pkgver=2.4.0
+pkgver=2.5.1
 pkgrel=1
 pkgdesc="Kafka development tool"
 arch=('x86_64')
@@ -25,11 +25,11 @@ license=('GPL')
 depends=('util-linux-libs' 'glibc' 'dbus' 'expat' 'libgpg-error' 'xz' 'pcre' 'systemd-libs' 'zlib')
 makedepends=()
 source=("${pkgname}-${pkgver}.deb::https://github.com/patschuh/KafkaEsque/releases/download/v${pkgver}/kafkaesque_${pkgver}-${pkgrel}_amd64.deb")
-sha256sums=('7f34de072c7827be3b0861134b4ded06640f569e2dac676fafe3eb312ba72fd5')
+sha256sums=('f116c847b312164a6931a4bdfac0bcdb232d0be5471547043b4d39ea59842acd')
 
 prepare() {
     cd "$srcdir"
-    /usr/bin/ar p "${pkgname}-${pkgver}.deb" data.tar.xz | bsdtar xf -
+    /usr/bin/ar p "${pkgname}-${pkgver}.deb" data.tar.zst | bsdtar xf -
 }
 
 package() {
